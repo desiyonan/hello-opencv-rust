@@ -11,7 +11,7 @@ use opencv::{self as cv, prelude::*};
 
 fn main() -> Result<()> {
     // Read image
-    let img = cv::imgcodecs::imread("./assets/demo.png", cv::imgcodecs::IMREAD_COLOR)?;
+    let img = cv::imgcodecs::imread("./assets/fgo1.png", cv::imgcodecs::IMREAD_COLOR)?;
     // Use Orb
     let mut orb = <dyn cv::features2d::ORB>::create(
         500,
